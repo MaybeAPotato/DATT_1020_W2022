@@ -83,7 +83,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 453.500015258789062, 866.0, 67.0, 22.0 ],
-					"text" : "delay 1500"
+					"text" : "delay 2500"
 				}
 
 			}
@@ -132,7 +132,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 276.602757334709167, 860.0, 67.0, 22.0 ],
-					"text" : "delay 1500"
+					"text" : "delay 2500"
 				}
 
 			}
@@ -349,7 +349,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 378.627833127975464, 1211.616504907608032, 50.0, 22.0 ],
-					"text" : "4"
+					"text" : "5"
 				}
 
 			}
@@ -652,6 +652,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-57",
+					"int" : 1,
 					"maxclass" : "gswitch2",
 					"numinlets" : 2,
 					"numoutlets" : 2,
@@ -776,7 +777,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 112.608419299125671, 1215.5, 50.0, 22.0 ],
-					"text" : "2"
+					"text" : "3"
 				}
 
 			}
@@ -966,7 +967,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 560.500015258789062, 637.5, 83.0, 22.0 ],
-					"text" : "madeitspace2"
+					"text" : "madeitspace1"
 				}
 
 			}
