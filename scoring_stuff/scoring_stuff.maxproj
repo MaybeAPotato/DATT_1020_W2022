@@ -2,7 +2,7 @@
 	"name" : "scoring_stuff",
 	"version" : 1,
 	"creationdate" : 3731306680,
-	"modificationdate" : 3731911937,
+	"modificationdate" : 3731951302,
 	"viewrect" : [ 0.0, 562.0, 350.0, 154.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -29,13 +29,18 @@
 		}
 ,
 		"media" : 		{
-			"skybox.png" : 			{
-				"kind" : "imagefile",
+			"doug1.obj" : 			{
+				"kind" : "model",
 				"local" : 1
 			}
 ,
-			"doug1.obj" : 			{
+			"mushroompuck.obj" : 			{
 				"kind" : "model",
+				"local" : 1
+			}
+,
+			"skybox.png" : 			{
+				"kind" : "imagefile",
 				"local" : 1
 			}
 ,
@@ -44,8 +49,8 @@
 				"local" : 1
 			}
 ,
-			"mushroompuck.obj" : 			{
-				"kind" : "model",
+			"skybox3.png" : 			{
+				"kind" : "imagefile",
 				"local" : 1
 			}
 ,

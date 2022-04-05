@@ -53,26 +53,26 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-25",
-					"linecount" : 4,
+					"linecount" : 3,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 700.0, 538.0, 261.0, 62.0 ],
-					"text" : "jit.gl.gridshape myworld @depth_enable 1 @shape cube @position -24 0 0 @scale 0.5 3. 25. @lighting_enable 1 @color 1 0 0 0.5 @blend_enable 1"
+					"patching_rect" : [ 700.0, 538.0, 294.0, 49.0 ],
+					"text" : "jit.gl.gridshape myworld @depth_enable 1 @shape cube @position -24 0 0 @scale 0.5 3. 25. @color 1 0 0 0.5 @blend_enable 1"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-16",
-					"linecount" : 4,
+					"linecount" : 3,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 700.0, 464.0, 257.0, 62.0 ],
-					"text" : "jit.gl.gridshape myworld @depth_enable 1 @shape cube @position 24 0 0 @scale 0.5 3. 25. @lighting_enable 1 @color 0 1 0 0.5 @blend_enable 1"
+					"patching_rect" : [ 700.0, 464.0, 290.0, 49.0 ],
+					"text" : "jit.gl.gridshape myworld @depth_enable 1 @shape cube @position 24 0 0 @scale 0.5 3. 25. @color 0 1 0.25 0.5 @blend_enable 1"
 				}
 
 			}
