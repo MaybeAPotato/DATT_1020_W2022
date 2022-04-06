@@ -2,7 +2,7 @@
 	"name" : "scoring_stuff",
 	"version" : 1,
 	"creationdate" : 3731306680,
-	"modificationdate" : 3731951302,
+	"modificationdate" : 3732033863,
 	"viewrect" : [ 0.0, 562.0, 350.0, 154.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -51,6 +51,11 @@
 ,
 			"skybox3.png" : 			{
 				"kind" : "imagefile",
+				"local" : 1
+			}
+,
+			"table.obj" : 			{
+				"kind" : "model",
 				"local" : 1
 			}
 ,

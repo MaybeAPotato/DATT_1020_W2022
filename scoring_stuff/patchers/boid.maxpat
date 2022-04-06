@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 675.0, 79.0, 571.0, 576.0 ],
+		"rect" : [ 535.0, 79.0, 711.0, 576.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,36 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-109",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 899.0, 269.0, 100.0, 23.0 ],
+					"text" : "jit.phys.picker"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "dynamics",
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-110",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 899.0, 244.0, 100.0, 23.0 ],
+					"text_width" : 76.0
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-108",
 					"maxclass" : "gswitch2",
@@ -352,7 +382,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1030.833343505859375, 230.833374000000049, 181.0, 23.0 ],
+					"patching_rect" : [ 1023.833343505859375, 237.833374000000049, 181.0, 23.0 ],
 					"text" : "jit.phys.body @shape cylinder"
 				}
 
@@ -449,7 +479,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 505.333328247070312, 1149.616504907608032, 50.0, 22.0 ],
-					"text" : "9"
+					"text" : "1"
 				}
 
 			}
@@ -752,7 +782,6 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-57",
-					"int" : 1,
 					"maxclass" : "gswitch2",
 					"numinlets" : 2,
 					"numoutlets" : 2,
@@ -877,7 +906,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 189.608419299125671, 1156.5, 50.0, 22.0 ],
-					"text" : "9"
+					"text" : "2"
 				}
 
 			}
@@ -926,7 +955,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 442.0, 149.66668701171875, 100.0, 22.0 ],
-					"text" : "position -11. 0. 0."
+					"text" : "position -11. 3. 0."
 				}
 
 			}
@@ -2353,6 +2382,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1", 1 ],
 					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-109", 0 ],
+					"source" : [ "obj-110", 0 ]
 				}
 
 			}
