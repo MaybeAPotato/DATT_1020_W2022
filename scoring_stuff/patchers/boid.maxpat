@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 11,
+			"minor" : 2,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 535.0, 79.0, 711.0, 576.0 ],
+		"rect" : [ 674.0, 89.0, 565.0, 511.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,47 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"bgcolor" : [ 0.435294117647059, 0.035294117647059, 0.035294117647059, 1.0 ],
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-42",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 34.833343505859375, 396.833374000000049, 266.0, 23.0 ],
+					"text" : "jit.phys.body @shape cube @scale 20 20 20"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 1.0, 0.494117647058824, 0.0, 1.0 ],
+					"id" : "obj-23",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 553.190974354743958, 1204.116504907608032, 39.0, 22.0 ],
+					"text" : "r start"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 1.0, 0.494117647058824, 0.0, 1.0 ],
+					"id" : "obj-156",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 125.0, 1160.5, 39.0, 22.0 ],
+					"text" : "r start"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 13.0,
 					"id" : "obj-109",
@@ -47,7 +88,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 899.0, 269.0, 100.0, 23.0 ],
+					"patching_rect" : [ 899.0, 282.5, 100.0, 23.0 ],
 					"text" : "jit.phys.picker"
 				}
 
@@ -63,7 +104,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 899.0, 244.0, 100.0, 23.0 ],
+					"patching_rect" : [ 899.0, 257.5, 100.0, 23.0 ],
 					"text_width" : 76.0
 				}
 
@@ -183,7 +224,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 29.0, 1193.116504907608032, 127.0, 33.0 ],
+					"patching_rect" : [ 29.0, 1193.116504907608032, 127.0, 34.0 ],
 					"text" : "Stop increasing when score reaches 10",
 					"textcolor" : [ 0.0, 0.227450980392157, 1.0, 1.0 ]
 				}
@@ -227,31 +268,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-23",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 1075.0, 533.66668701171875, 207.0, 22.0 ],
-					"text" : "jit.gl.texture myworld @name shroom"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-42",
-					"linecount" : 3,
-					"maxclass" : "newobj",
-					"numinlets" : 9,
-					"numoutlets" : 2,
-					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 1075.0, 567.0, 250.000015258789062, 49.0 ],
-					"text" : "jit.gl.mesh myworld @lighting_enable 1 @smooth_shading 1 @depth_enable 1 @auto_colors 1 @texture shroom"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-104",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -281,7 +297,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 118.441793322563171, 835.0, 169.0, 47.0 ],
+					"patching_rect" : [ 118.441793322563171, 835.0, 169.0, 48.0 ],
 					"text" : "changes the gswitch back to allow another score in the same goal to go through >>",
 					"textcolor" : [ 0.0, 0.011764705882353, 1.0, 1.0 ]
 				}
@@ -363,12 +379,13 @@
 					"fontname" : "Arial",
 					"fontsize" : 13.0,
 					"id" : "obj-106",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 1004.0, 275.0, 336.0, 23.0 ],
-					"text" : "jit.gl.gridshape @shape cylinder @color 1 0 1 1 @axes 1"
+					"patching_rect" : [ 1004.0, 275.0, 340.0, 38.0 ],
+					"text" : "jit.gl.gridshape @shape cylinder @color 1 0 1 1 @axes 1 @animmode local"
 				}
 
 			}
@@ -479,7 +496,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 505.333328247070312, 1149.616504907608032, 50.0, 22.0 ],
-					"text" : "1"
+					"text" : "0"
 				}
 
 			}
@@ -515,7 +532,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 471.891580700874329, 1049.66668701171875, 65.0, 47.0 ],
+					"patching_rect" : [ 471.891580700874329, 1049.66668701171875, 65.0, 48.0 ],
 					"text" : "SCORE FOR 2ND GOAL:"
 				}
 
@@ -527,7 +544,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 648.325253784656525, 751.0, 182.022634148597717, 60.0 ],
+					"patching_rect" : [ 648.325253784656525, 751.0, 182.022634148597717, 62.0 ],
 					"text" : "Specific madeitspace names (with numbers) are important in this example -- each triggers once only, unless reset"
 				}
 
@@ -539,7 +556,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1085.000015258789062, 722.66668701171875, 240.0, 60.0 ],
+					"patching_rect" : [ 1085.000015258789062, 722.66668701171875, 240.0, 62.0 ],
 					"text" : "Resetting ability to trigger score increase\nOR\nSet score to 0 & resetting ability to trigger score increase"
 				}
 
@@ -608,7 +625,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 241.608419299125671, 1119.5, 117.0, 74.0 ],
+					"patching_rect" : [ 241.608419299125671, 1119.5, 117.0, 75.0 ],
 					"text" : "whatever the score currently is goes into this message, \nand gets banged to continue on..."
 				}
 
@@ -631,7 +648,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 266.666671752929688, 955.0, 461.0, 33.0 ],
+					"patching_rect" : [ 266.666671752929688, 955.0, 461.0, 34.0 ],
 					"text" : "a gswitch2 being set to 1 means that each can only trigger the bang one time to increase score, so, that way, only 1 is added to the score when a collision is detected"
 				}
 
@@ -654,7 +671,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 902.000015258789062, 886.0, 113.0, 60.0 ],
+					"patching_rect" : [ 902.000015258789062, 886.0, 113.0, 62.0 ],
 					"text" : "reset the gswitch2s\nso will work again during the next go around (if desired)"
 				}
 
@@ -666,7 +683,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1085.000015258789062, 788.0, 155.0, 33.0 ],
+					"patching_rect" : [ 1085.000015258789062, 788.0, 155.0, 34.0 ],
 					"text" : "When the boid hits a wall,\nreset some things"
 				}
 
@@ -906,7 +923,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 189.608419299125671, 1156.5, 50.0, 22.0 ],
-					"text" : "2"
+					"text" : "0"
 				}
 
 			}
@@ -942,7 +959,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 152.941793322563171, 1056.66668701171875, 62.0, 47.0 ],
+					"patching_rect" : [ 152.941793322563171, 1056.66668701171875, 62.0, 48.0 ],
 					"text" : "SCORE FOR 1ST GOAL:"
 				}
 
@@ -955,7 +972,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 442.0, 149.66668701171875, 100.0, 22.0 ],
-					"text" : "position -11. 3. 0."
+					"text" : "position -11. 1. 0."
 				}
 
 			}
@@ -1096,7 +1113,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 560.500015258789062, 637.5, 83.0, 22.0 ],
-					"text" : "madeitspace1"
+					"text" : "u308000426"
 				}
 
 			}
@@ -1107,7 +1124,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 414.333358764648438, 445.5, 167.0, 33.0 ],
+					"patching_rect" : [ 414.333358764648438, 445.5, 167.0, 34.0 ],
 					"text" : "Set ghost scale usually to be slightly larger than object"
 				}
 
@@ -1255,14 +1272,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 432.0, 79.0, 814.0, 899.0 ],
+						"rect" : [ 425.0, 84.0, 814.0, 899.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1309,7 +1326,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 27.0, 219.166564999999991, 90.0, 47.0 ],
+									"patching_rect" : [ 27.0, 219.166564999999991, 90.0, 48.0 ],
 									"text" : "Modified to move the puck back and forth",
 									"textcolor" : [ 0.0, 0.043137254901961, 1.0, 1.0 ]
 								}
@@ -1407,7 +1424,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 81.333344000000011, 421.66668701171875, 85.0, 22.0 ],
-									"text" : "move 0.2 0. 0."
+									"text" : "move 0.8 0. 0."
 								}
 
 							}
@@ -1419,7 +1436,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 28.0, 483.0, 89.0, 22.0 ],
-									"text" : "move -0.2 0. 0."
+									"text" : "move -0.8 0. 0."
 								}
 
 							}
@@ -1550,7 +1567,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 281.333344000000011, 426.333435000000009, 207.0, 33.0 ],
+									"patching_rect" : [ 281.333344000000011, 426.333435000000009, 207.0, 34.0 ],
 									"text" : "Creates a new position for the camera or object, and sends it there!"
 								}
 
@@ -1562,7 +1579,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 287.666626000000008, 296.666564999999991, 264.0, 47.0 ],
+									"patching_rect" : [ 287.666626000000008, 296.666564999999991, 264.0, 48.0 ],
 									"text" : "Multiplies the position by 95% (which reduces number), and reverses it using the negative number sign"
 								}
 
@@ -1574,7 +1591,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 281.333344000000011, 127.333251999999987, 154.0, 33.0 ],
+									"patching_rect" : [ 281.333344000000011, 127.333251999999987, 154.0, 34.0 ],
 									"text" : "Comparing object position to size of world!"
 								}
 
@@ -1586,7 +1603,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 463.833281999999997, 158.999939000000012, 143.0, 74.0 ],
+									"patching_rect" : [ 463.833281999999997, 158.999939000000012, 143.0, 75.0 ],
 									"text" : "Get the size of the world\n\ns and r must use exact same spelling AND capitalization"
 								}
 
@@ -2152,7 +2169,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 552.333358764648438, 504.66668701171875, 112.0, 33.0 ],
+					"patching_rect" : [ 552.333358764648438, 504.66668701171875, 112.0, 34.0 ],
 					"text" : "<< NOTICE @animmode local"
 				}
 
@@ -2165,7 +2182,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 356.666702270507812, 117.3333740234375, 85.0, 22.0 ],
-					"text" : "move 0.2 0. 0."
+					"text" : "move 0.8 0. 0."
 				}
 
 			}
@@ -2222,7 +2239,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 194.833343505859375, 411.66668701171875, 60.0, 22.0 ],
+					"patching_rect" : [ 231.833343505859375, 444.16668701171875, 60.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -2234,7 +2251,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 194.833343505859375, 445.5, 137.0, 22.0 ],
+					"patching_rect" : [ 231.833343505859375, 478.0, 137.0, 22.0 ],
 					"text" : "read mushroompuck.obj"
 				}
 
@@ -2247,7 +2264,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 184.833343505859375, 516.66668701171875, 350.0, 35.0 ],
+					"patching_rect" : [ 184.833343505859375, 516.66668701171875, 350.0, 36.0 ],
 					"text" : "jit.gl.model myworld @depth_enable 1 @lighting_enable 1 @material_mode 0 @animmode local"
 				}
 
@@ -2261,6 +2278,18 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1102.833343505859375, 148.0, 258.499969482421875, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "scale",
+					"id" : "obj-111",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 26.5, 343.833373999999992, 234.0, 22.0 ]
 				}
 
 			}
@@ -2394,6 +2423,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-42", 0 ],
+					"source" : [ "obj-111", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 1 ],
 					"order" : 0,
 					"source" : [ "obj-12", 0 ]
@@ -2405,6 +2441,13 @@
 					"destination" : [ "obj-50", 0 ],
 					"order" : 1,
 					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-33", 0 ],
+					"source" : [ "obj-156", 0 ]
 				}
 
 			}
@@ -2438,7 +2481,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-42", 0 ],
+					"destination" : [ "obj-108", 0 ],
 					"source" : [ "obj-23", 0 ]
 				}
 
@@ -2602,6 +2645,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-50", 0 ],
+					"disabled" : 1,
+					"source" : [ "obj-42", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-77", 0 ],
 					"source" : [ "obj-43", 0 ]
 				}
@@ -2665,13 +2716,6 @@
 					"destination" : [ "obj-1", 0 ],
 					"order" : 0,
 					"source" : [ "obj-50", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-42", 0 ],
-					"source" : [ "obj-50", 0 ]
 				}
 
 			}
@@ -2894,6 +2938,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-108", 0 ],
+					"order" : 0,
+					"source" : [ "obj-72", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-33", 0 ],
+					"order" : 1,
 					"source" : [ "obj-72", 0 ]
 				}
 
@@ -2916,7 +2969,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-108", 0 ],
+					"order" : 0,
+					"source" : [ "obj-77", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-33", 0 ],
+					"order" : 1,
 					"source" : [ "obj-77", 0 ]
 				}
 
@@ -3035,6 +3097,24 @@
 			}
  ],
 		"styles" : [ 			{
+				"name" : "buttonBlue",
+				"default" : 				{
+					"bgcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
+				"name" : "buttonPurple",
+				"default" : 				{
+					"bgcolor" : [ 0.372549, 0.196078, 0.486275, 1.0 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
 				"name" : "newobjBlue-1",
 				"default" : 				{
 					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
@@ -3053,9 +3133,27 @@
 				"multi" : 0
 			}
 , 			{
+				"name" : "newobjBrown-1",
+				"default" : 				{
+					"accentcolor" : [ 0.654902, 0.572549, 0.376471, 1.0 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
 				"name" : "newobjGreen-1",
 				"default" : 				{
 					"accentcolor" : [ 0.0, 0.533333, 0.168627, 1.0 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
+				"name" : "newobjRed-1",
+				"default" : 				{
+					"accentcolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3082,6 +3180,15 @@
 				"multi" : 0
 			}
 , 			{
+				"name" : "numberB-1",
+				"default" : 				{
+					"accentcolor" : [ 0.011765, 0.396078, 0.752941, 1.0 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
 				"name" : "numberG-1",
 				"default" : 				{
 					"accentcolor" : [ 0.0, 0.533333, 0.168627, 1.0 ]
@@ -3094,6 +3201,15 @@
 				"name" : "numberGold-1",
 				"default" : 				{
 					"accentcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
+				"name" : "numberR-1",
+				"default" : 				{
+					"accentcolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
