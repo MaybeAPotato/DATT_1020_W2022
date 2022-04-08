@@ -1,0 +1,11 @@
+{
+	"keymap" : 	{
+		"d" : "move -1 0 0", #NEG X
+		"a" : "move 1 0 0", #POS X
+		#"m" : "move 0 -1 0", #NEG Y
+		#"u" : "move 0 1 0", #POS Y
+		"w" : "move 0 0 -1", #NEG Z
+		"s" : "move 0 0 1" #POS Z
+	}
+
+}
