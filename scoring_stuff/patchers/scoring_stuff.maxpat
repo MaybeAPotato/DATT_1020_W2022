@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 438.0, 104.0, 789.0, 506.0 ],
+		"rect" : [ 675.0, 79.0, 731.0, 506.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,11 +40,77 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-190",
+					"linecount" : 6,
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 1674.5, 171.0, 115.0, 96.0 ],
+					"text" : "jit.phys.body @shape cube @scale 26 11 1 @position 0 7 0 @mass 0 @restitution 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-178",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1674.5, 135.0, 95.0, 22.0 ],
+					"text" : "position 0 0 -17"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-174",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1552.0, 135.0, 87.0, 22.0 ],
+					"text" : "position 0 0 17"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-170",
+					"linecount" : 6,
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 1552.0, 171.0, 115.0, 96.0 ],
+					"text" : "jit.phys.body @shape cube @scale 26 11 1 @position 0 7 0 @mass 0 @restitution 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-92",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1344.1666259765625, 204.0, 29.5, 22.0 ],
+					"text" : "1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-139",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1087.0, 74.0, 209.1666259765625, 20.0 ],
+					"patching_rect" : [ 1087.0, 63.5, 209.1666259765625, 20.0 ],
 					"text" : "Solid surface for air hockey table",
 					"textcolor" : [ 0.0, 0.011764705882353, 1.0, 1.0 ]
 				}
@@ -57,7 +123,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1401.0, 74.0, 58.0, 22.0 ],
+					"patching_rect" : [ 1408.0, 57.0, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -69,7 +135,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1304.0, 193.0, 84.0, 22.0 ],
+					"patching_rect" : [ 1246.0, 202.0, 84.0, 22.0 ],
 					"text" : "position 0 -4 0"
 				}
 
@@ -81,8 +147,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1321.0, 225.0, 80.0, 22.0 ],
-					"text" : "scale 25 1 21"
+					"patching_rect" : [ 1231.0, 233.0, 80.0, 22.0 ],
+					"text" : "scale 25 1 16"
 				}
 
 			}
@@ -96,7 +162,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1110.0, 164.5, 119.0, 98.0 ],
+					"patching_rect" : [ 1081.0, 165.0, 119.0, 96.0 ],
 					"text" : "jit.phys.body @shape cube @scale 5 0.1 5 @position 0 7 0 @mass 0 @restitution 1"
 				}
 
@@ -109,7 +175,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1127.1666259765625, 125.5, 220.0, 22.0 ]
+					"patching_rect" : [ 1096.0, 115.0, 220.0, 22.0 ]
 				}
 
 			}
@@ -318,7 +384,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 587.1666259765625, 764.16668701171875, 96.0, 34.0 ],
+					"patching_rect" : [ 587.1666259765625, 764.16668701171875, 96.0, 33.0 ],
 					"text" : "WHEN SCORE REACHES 10...",
 					"textcolor" : [ 0.0, 0.011764705882353, 1.0, 1.0 ]
 				}
@@ -331,7 +397,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 551.0, 524.999999999999886, 88.0, 34.0 ],
+					"patching_rect" : [ 551.0, 524.999999999999886, 88.0, 33.0 ],
 					"text" : "Start/Restart game",
 					"textcolor" : [ 0.0, 0.011764705882353, 1.0, 1.0 ]
 				}
@@ -536,7 +602,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 712.0, 1030.16668701171875, 79.25, 62.0 ],
+					"patching_rect" : [ 712.0, 1030.16668701171875, 79.25, 60.0 ],
 					"text" : "GREEN WINNER SCREEN\n(multiplayer)",
 					"textcolor" : [ 0.0, 0.164705882352941, 1.0, 1.0 ]
 				}
@@ -549,7 +615,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1780.1666259765625, 962.5, 95.25, 48.0 ],
+					"patching_rect" : [ 1780.1666259765625, 962.5, 95.25, 47.0 ],
 					"text" : "RED WINNER SCREEN\n(multiplayer)",
 					"textcolor" : [ 0.0, 0.164705882352941, 1.0, 1.0 ]
 				}
@@ -722,7 +788,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1571.5416259765625, 949.5, 95.25, 48.0 ],
+					"patching_rect" : [ 1571.5416259765625, 949.5, 95.25, 47.0 ],
 					"text" : "RED WINNER SCREEN\n(singleplayer)",
 					"textcolor" : [ 0.0, 0.164705882352941, 1.0, 1.0 ]
 				}
@@ -735,7 +801,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 493.0416259765625, 1016.0, 85.25, 62.0 ],
+					"patching_rect" : [ 493.0416259765625, 1016.0, 85.25, 60.0 ],
 					"text" : "GREEN WINNER SCREEN\n(singleplayer)",
 					"textcolor" : [ 0.0, 0.164705882352941, 1.0, 1.0 ]
 				}
@@ -780,7 +846,6 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-121",
-					"int" : 1,
 					"maxclass" : "gswitch2",
 					"numinlets" : 2,
 					"numoutlets" : 2,
@@ -805,7 +870,6 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-118",
-					"int" : 1,
 					"maxclass" : "gswitch2",
 					"numinlets" : 2,
 					"numoutlets" : 2,
@@ -906,7 +970,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 464.4166259765625, 334.166686999999854, 150.0, 34.0 ],
+					"patching_rect" : [ 464.4166259765625, 334.166686999999854, 150.0, 33.0 ],
 					"text" : "DIFFERENT DISPLAYS FOR EACH MODE",
 					"textcolor" : [ 0.0, 0.133333333333333, 1.0, 1.0 ]
 				}
@@ -1301,7 +1365,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 797.1666259765625, 862.16668701171875, 75.0, 22.0 ],
+					"patching_rect" : [ 797.1666259765625, 862.16668701171875, 75.0, 21.0 ],
 					"text" : "prepend text"
 				}
 
@@ -1406,7 +1470,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1332.1666259765625, 879.16668701171875, 75.0, 22.0 ],
+					"patching_rect" : [ 1332.1666259765625, 879.16668701171875, 75.0, 21.0 ],
 					"text" : "prepend text"
 				}
 
@@ -1497,7 +1561,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 926.6666259765625, 542.666656494140625, 250.0, 34.0 ],
+					"patching_rect" : [ 926.6666259765625, 542.666656494140625, 250.0, 33.0 ],
 					"text" : "^changed from \"madeItSpace 4\" to \"madeItSpace 2\" to create two goalies",
 					"textcolor" : [ 0.050980392156863, 0.0, 1.0, 1.0 ]
 				}
@@ -1510,7 +1574,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 897.0, 607.0, 279.6666259765625, 48.0 ],
+					"patching_rect" : [ 897.0, 607.0, 279.6666259765625, 47.0 ],
 					"text" : "This example does NOT demonstrate how to display the score to the user!\nIt just displays the score here, for you, the creator."
 				}
 
@@ -1523,7 +1587,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 822.6666259765625, 402.833343505859375, 225.0, 103.0 ],
+					"patching_rect" : [ 822.6666259765625, 402.833343505859375, 225.0, 100.0 ],
 					"text" : "Check the MADEITSPACE and the BOID patchers in the project window for one example of adding points when passing certain areas/objects\n\nYou should also have a look at the changes to the collisionparser"
 				}
 
@@ -1572,7 +1636,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 840.1666259765625, 346.000030517578125, 273.0, 34.0 ],
+					"patching_rect" : [ 840.1666259765625, 346.000030517578125, 273.0, 33.0 ],
 					"text" : "One method to add 1 (and ONLY 1) to the score on collision with each one of a set of ghosts!"
 				}
 
@@ -1585,7 +1649,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1127.1666259765625, 426.666656494140625, 229.0, 117.0 ],
+					"patching_rect" : [ 1127.1666259765625, 426.666656494140625, 229.0, 114.0 ],
 					"text" : "Our collision-detection techniques are  customized to work with poly~ \n\nTHEREFORE if I only want one of this kind of object to be involved in collisions, I still may need to make that object using poly, because our collision-detection coding is based on poly~ techniques"
 				}
 
@@ -1755,7 +1819,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 639.666625999999951, 26.5, 93.0, 25.0 ],
+					"patching_rect" : [ 639.666625999999951, 26.5, 93.0, 24.0 ],
 					"text" : "SKYBOX"
 				}
 
@@ -1768,7 +1832,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 6.0, 7.5, 220.0, 25.0 ],
+					"patching_rect" : [ 6.0, 7.5, 220.0, 24.0 ],
 					"text" : "WORLD & RENDERNAME"
 				}
 
@@ -1781,7 +1845,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 166.25, 412.166686999999854, 81.0, 25.0 ],
+					"patching_rect" : [ 166.25, 412.166686999999854, 81.0, 24.0 ],
 					"text" : "CAMERA"
 				}
 
@@ -2380,7 +2444,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 925.166625999999951, 90.5, 80.0, 48.0 ],
+					"patching_rect" : [ 925.166625999999951, 90.5, 80.0, 47.0 ],
 					"text" : "SET THE \nSIZE OF\nTHE WORLD"
 				}
 
@@ -2442,7 +2506,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 850.166625999999951, 176.5, 132.0, 62.0 ],
+					"patching_rect" : [ 850.166625999999951, 176.5, 132.0, 60.0 ],
 					"text" : "This is from center to the edge -- the world size is actually 2X this number..."
 				}
 
@@ -2454,7 +2518,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 217.0, 595.999999999999886, 216.0, 34.0 ],
+					"patching_rect" : [ 217.0, 595.999999999999886, 216.0, 33.0 ],
 					"text" : "far_clip can be set to be in a good relationship with the size of the cube..."
 				}
 
@@ -2478,7 +2542,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 81.25, 457.999999999999886, 136.0, 34.0 ],
+					"patching_rect" : [ 81.25, 457.999999999999886, 136.0, 33.0 ],
 					"text" : "Camera reset \n-- If you get lost, hit this!"
 				}
 
@@ -2731,7 +2795,19 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1087.0, 99.5, 238.0, 22.0 ]
+					"patching_rect" : [ 1087.0, 89.0, 238.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "friction",
+					"id" : "obj-154",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1344.1666259765625, 229.0, 150.0, 22.0 ]
 				}
 
 			}
@@ -3161,6 +3237,14 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-147", 0 ],
+					"order" : 3,
+					"source" : [ "obj-148", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-174", 0 ],
 					"order" : 1,
 					"source" : [ "obj-148", 0 ]
 				}
@@ -3168,8 +3252,24 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-41", 0 ],
+					"destination" : [ "obj-178", 0 ],
 					"order" : 0,
+					"source" : [ "obj-148", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-41", 0 ],
+					"order" : 4,
+					"source" : [ "obj-148", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-92", 0 ],
+					"order" : 2,
 					"source" : [ "obj-148", 0 ]
 				}
 
@@ -3213,6 +3313,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-60", 0 ],
 					"source" : [ "obj-153", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-203", 0 ],
+					"source" : [ "obj-154", 0 ]
 				}
 
 			}
@@ -3337,6 +3444,20 @@
 					"destination" : [ "obj-23", 0 ],
 					"order" : 2,
 					"source" : [ "obj-169", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-170", 0 ],
+					"source" : [ "obj-174", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-190", 0 ],
+					"source" : [ "obj-178", 0 ]
 				}
 
 			}
@@ -4062,6 +4183,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-154", 0 ],
+					"source" : [ "obj-92", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-116", 0 ],
 					"source" : [ "obj-93", 0 ]
 				}
@@ -4098,21 +4226,21 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "boid.maxpat",
-				"bootpath" : "~/OneDrive/Desktop/Vanessa usb files/Final Project/scoring_stuff/patchers",
+				"bootpath" : "~/Documents/GitHub/DATT_1020_W2022/scoring_stuff/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "collisionParser.maxpat",
-				"bootpath" : "~/OneDrive/Desktop/Vanessa usb files/Final Project/scoring_stuff/patchers",
+				"bootpath" : "~/Documents/GitHub/DATT_1020_W2022/scoring_stuff/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "madeItSpace.maxpat",
-				"bootpath" : "~/OneDrive/Desktop/Vanessa usb files/Final Project/scoring_stuff/patchers",
+				"bootpath" : "~/Documents/GitHub/DATT_1020_W2022/scoring_stuff/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
