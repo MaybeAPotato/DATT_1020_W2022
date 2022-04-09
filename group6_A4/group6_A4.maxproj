@@ -2,8 +2,8 @@
 	"name" : "group6_A4",
 	"version" : 1,
 	"creationdate" : 3732382396,
-	"modificationdate" : 3732382484,
-	"viewrect" : [ 0.0, 565.0, 300.0, 189.0 ],
+	"modificationdate" : 3732384104,
+	"viewrect" : [ 648.0, -341.0, 300.0, 189.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -73,6 +73,11 @@
 			}
 ,
 			"player_2.yml" : 			{
+				"kind" : "yaml",
+				"local" : 1
+			}
+,
+			"singleplayer.yml" : 			{
 				"kind" : "yaml",
 				"local" : 1
 			}
