@@ -40,6 +40,19 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"bgcolor" : [ 1.0, 0.494117647058824, 0.0, 1.0 ],
+					"id" : "obj-195",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1054.0, 783.0, 39.0, 22.0 ],
+					"text" : "r start"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-42",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -107,7 +120,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 179.106529640624558, 585.5, 238.78694128124971, 22.0 ],
-					"text" : "position 7.109576 -2.602949 1.663315"
+					"text" : "position 8.667782 -2.661361 9.127319"
 				}
 
 			}
@@ -740,7 +753,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 505.333328247070312, 1149.616504907608032, 50.0, 22.0 ],
-					"text" : "3"
+					"text" : "0"
 				}
 
 			}
@@ -1167,7 +1180,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 189.608419299125671, 1156.5, 50.0, 22.0 ],
-					"text" : "2"
+					"text" : "0"
 				}
 
 			}
@@ -1590,7 +1603,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-175", 0 ],
-					"order" : 1,
 					"source" : [ "obj-112", 1 ]
 				}
 
@@ -1598,7 +1610,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-175", 0 ],
-					"order" : 1,
 					"source" : [ "obj-112", 0 ]
 				}
 
@@ -1606,7 +1617,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-178", 0 ],
-					"order" : 0,
+					"disabled" : 1,
 					"source" : [ "obj-112", 1 ]
 				}
 
@@ -1614,7 +1625,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-178", 0 ],
-					"order" : 0,
+					"disabled" : 1,
 					"source" : [ "obj-112", 0 ]
 				}
 
@@ -1777,6 +1788,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-174", 0 ],
 					"source" : [ "obj-190", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-96", 0 ],
+					"source" : [ "obj-195", 0 ]
 				}
 
 			}
