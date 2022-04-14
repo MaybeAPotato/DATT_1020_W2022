@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-254",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 189.0, 431.0, 155.0, 22.0 ],
+					"text" : "loadmess gl_color 1 0.5 0 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-49",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -132,7 +144,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 179.106529640624558, 585.5, 238.78694128124971, 22.0 ],
-					"text" : "position -14.532456 -2.610851 -7.070106"
+					"text" : "position -19.687246 -2.624372 2.071372"
 				}
 
 			}
@@ -319,7 +331,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 219.786941562499578, 413.5, 40.0, 23.0 ],
+					"patching_rect" : [ 173.083343505859375, 385.0, 40.0, 23.0 ],
 					"text" : "t l b"
 				}
 
@@ -765,7 +777,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 505.333328247070312, 1149.616504907608032, 50.0, 22.0 ],
-					"text" : "1"
+					"text" : "0"
 				}
 
 			}
@@ -1192,7 +1204,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 189.608419299125671, 1156.5, 50.0, 22.0 ],
-					"text" : "3"
+					"text" : "0"
 				}
 
 			}
@@ -1358,7 +1370,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 560.500015258789062, 637.5, 83.0, 22.0 ],
-					"text" : "puck"
+					"text" : "u641001194"
 				}
 
 			}
@@ -1864,6 +1876,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-176", 0 ],
+					"source" : [ "obj-254", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-29", 0 ],
 					"source" : [ "obj-26", 0 ]
 				}
@@ -1931,6 +1950,7 @@
 				"patchline" : 				{
 					"color" : [ 0.439216, 0.74902, 0.254902, 0.9 ],
 					"destination" : [ "obj-178", 0 ],
+					"disabled" : 1,
 					"source" : [ "obj-36", 0 ]
 				}
 
@@ -1939,6 +1959,7 @@
 				"patchline" : 				{
 					"color" : [ 0.439216, 0.74902, 0.254902, 0.9 ],
 					"destination" : [ "obj-178", 0 ],
+					"disabled" : 1,
 					"source" : [ "obj-37", 0 ]
 				}
 
